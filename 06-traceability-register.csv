@@ -1,0 +1,5 @@
+Requirement ID,Type,Statement,Source ID or workshop question,Status,Priority,Business owner,Rule version or effective date,Design reference,Test IDs,Release,Open decision,Last reviewed
+BR-001,Business,"Recognise and record qualifying complaints from first contact",AU-01 RG 271.27-.35,Proposed,Must,Complaints policy owner,,FR-001,AT-001,R1,Confirm intake channels and legal entities,2026-09-27
+FR-001,Functional,"Capture original expression channel and receipt timestamp",BR-001,Proposed,Must,Complaints operations,,05-functional-spec-template.md,AT-001,R1,Define timestamp correction authority,2026-09-27
+FR-003,Functional,"Select and display applicable response clock and rule version",AU-01 RG 271.56-.60,Proposed,Must,Compliance owner,,05-functional-spec-template.md,AT-003,R1,Approve product-specific rule table,2026-09-27
+FR-008,Functional,"Reconcile approved remedies to execution",AU-01 RG 271.164-.165,Proposed,Must,Product and finance owners,,05-functional-spec-template.md,AT-008,R1,Name authoritative payment system,2026-09-27
