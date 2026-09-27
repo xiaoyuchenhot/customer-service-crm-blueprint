@@ -6,5 +6,6 @@
 *.pfx
 private/
 customer-data/
+/projects/
 __pycache__/
 .pytest_cache/

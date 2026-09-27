@@ -2,6 +2,8 @@
 
 This guide is for a founder, business sponsor, product owner or analyst who starts with an idea such as **"I want to build a CRM for customer service."** The repository provides a structured conversation and durable project documents. It does not require the person to answer 189 questions at once.
 
+**Publication boundary:** treat this repository as a public-facing toolkit. Check its current GitHub visibility before sharing a link. The `projects/` folder is ignored by Git so local discovery notes are not committed by default. For real company requirements that a team must share and review, create a separate private repository or use an approved internal workspace. Put only synthetic or explicitly cleared examples in this toolkit.
+
 The worked example is an Australian bank handling complaints. The same method works for other industries if the team replaces the banking rules, scenarios and sources with those that apply to its business.
 
 ## What this repository does
@@ -13,14 +15,14 @@ An AI assistant can maintain these files while a project is open in its workspac
 ## First use: five steps
 
 1. **Open or clone this repository in Codex or another coding assistant that can read local files.** Work from the repository root so it can see [AGENTS.md](AGENTS.md) and the skill.
-2. **Start a project.** Give the assistant your company, industry, jurisdiction, customer-service goal and any known scope. If unsure, say so; the skill will begin with discovery.
+2. **Start a project.** Give the assistant your company, industry, jurisdiction, customer-service goal and any known scope. If unsure, say so; the skill will begin with discovery. Decide where confidential project files will live before adding real details.
 3. **Answer a small batch of questions.** The assistant should ask up to five high-value questions, explain why they matter, and accept "unknown" as an answer. It records each answer as Confirmed, Proposed, Assumption or Open.
 4. **Review the updated files.** Each round should update a project brief, an answer/decision log, open questions and a business blueprint under a new project folder. Corrections to an answer should update the record, not leave competing versions.
 5. **Repeat until a bounded first release is ready.** Then ask the assistant to draft the BRD, functional specifications, test scenarios and architecture options from approved answers. Have the named owners review the documents before implementation.
 
 ### Copyable first prompt
 
-> Use the CRM discovery workflow in skills/crm-discovery/SKILL.md. I want to create a customer-service CRM for [company or type of company] in [country]. Our first use case is [complaints / enquiries / service requests / other]. Create a project folder named [short-name], record what I have said as initial context, and ask me the first small batch of questions. Keep unconfirmed assumptions separate from decisions. Do not start coding yet.
+> Use the CRM discovery workflow in skills/crm-discovery/SKILL.md. I want to create a customer-service CRM for [company or type of company] in [country]. Our first use case is [complaints / enquiries / service requests / other]. Create a local, Git-ignored project folder named [short-name], record what I have said as initial context, and ask me the first small batch of questions. Keep unconfirmed assumptions separate from decisions. Do not start coding or publish my project files yet.
 
 For the Australian banking example:
 
@@ -46,7 +48,7 @@ For the Australian banking example:
 
 ## Project files created during discovery
 
-For each initiative, use a separate folder such as **projects/retail-bank-complaints/**:
+For each initiative, use a separate local folder such as **projects/retail-bank-complaints/**. This path is Git-ignored in the toolkit. If the project team needs version control and review, move the project documents to a separate private repository with the team's approved access controls:
 
 | File | Purpose | Updated when |
 | --- | --- | --- |
@@ -90,11 +92,11 @@ The blueprint is **living** during discovery. The BRD states business outcomes a
 
 ## How to use GitHub while the project is young
 
-- Keep the generic question bank, skill and templates on the main branch. Create a separate project folder for each company or product initiative.
-- Make one focused change per branch and pull request, for example "define complaint intake and ownership" or "approve hardship clock mapping." The pull request records the decision, reviewers and source changes.
+- Keep the generic question bank, skill, templates and synthetic examples on this toolkit's main branch. Keep real project folders local or in a separate private repository.
+- In the private project repository, make one focused change per branch and pull request, for example "define complaint intake and ownership" or "approve hardship clock mapping." The pull request records the decision, reviewers and source changes.
 - Ask the relevant owner to review the sections they understand: operations for journeys, compliance for rules, privacy/security for controls, data owners for definitions, and architecture for interfaces and resilience.
-- Use issues for decisions with an owner and due date. Put the final answer back into the project decision record so the repository remains the source of truth.
-- Keep customer names, account numbers, call recordings, credentials and production exports out of GitHub and AI prompts. Use synthetic or approved redacted examples. A private repository still needs access controls.
+- Use issues in the private project repository for decisions with an owner and due date. Put the final answer back into the project decision record so that repository remains the source of truth.
+- Keep customer names, account numbers, call recordings, credentials and production exports out of this toolkit and AI prompts. Use synthetic or approved redacted examples. A private project repository still needs access controls.
 - Tag or otherwise identify an approved blueprint version before a release. A new policy interpretation should update its source record, affected requirements, tests and rollout decision.
 
 ## When the team can ask AI to build

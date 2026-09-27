@@ -6,6 +6,8 @@
 
 **New to the repository?** Read [START-HERE.md](START-HERE.md). It explains how to use the guided [CRM discovery skill](skills/crm-discovery/SKILL.md) to turn an initial idea into a reviewed [business blueprint](11-business-blueprint-template.md), then into specifications and a bounded implementation slice.
 
+**Publication boundary:** this repository contains generic guidance and synthetic examples. The local `projects/` directory is ignored by Git. Keep company-specific answers and blueprints in a separate private repository or approved internal workspace unless they are deliberately cleared for publication.
+
 ## What to do first
 
 1. Name a business sponsor, complaints policy owner, compliance owner, privacy owner, security owner, data owner and solution architect.
@@ -37,7 +39,7 @@ Start with intake from phone, web and email; complaint recognition; case creatio
 - Give every requirement an ID and one accountable business owner.
 - Record the jurisdiction, source URL, source version/date, interpretation owner and review date for every regulatory rule.
 - Keep regulatory maximums separate from internal service targets.
-- Store real customer data and secrets outside this repository. Use synthetic examples in prompts and tests.
+- Store real customer data, secrets and confidential company decisions outside this public-facing repository. Use synthetic examples in prompts and tests.
 - Track unresolved questions as decisions, including the consequence of leaving them unresolved.
 
 ## Completion gate before development

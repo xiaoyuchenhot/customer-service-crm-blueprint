@@ -9,7 +9,7 @@ Turn a vague service-system idea into a traceable business blueprint through sho
 
 ## Start or resume
 
-1. Identify the current project folder from the user's request. If none exists, create projects/<short-name>/ with a brief, discovery log, decisions, open questions and blueprint. Use a neutral short name if needed.
+1. Identify the current project folder from the user's request. If none exists, create a local projects/<short-name>/ with a brief, discovery log, decisions, open questions and blueprint. In this toolkit, projects/ is Git-ignored. For team collaboration on real company requirements, use a separate private repository or approved internal workspace.
 2. Read existing project files before asking a repeated question. Preserve earlier approved decisions and update them when the user corrects them.
 3. Start with the objective, company/legal entity, jurisdiction, customer segments, service scenarios, channels and current systems. Use the [question bank](../../01-discovery-question-bank.md) and [scenario catalog](../../10-service-scenario-catalog.md) selectively; do not recite them in full.
 4. Ask up to five questions per round, ranked by how much each answer changes customer outcome, policy, architecture or first-release scope. Explain a consequential ambiguity briefly. Accept "unknown" and record the owner needed to resolve it.
@@ -27,4 +27,4 @@ Use realistic, synthetic scenarios to challenge each journey. Identify normal, e
 
 When the user asks for a BRD, specification, architecture or code, first show coverage and unresolved consequential decisions. Continue work that does not depend on them. Draft the [BRD](../../04-brd-template.md) and [functional specification](../../05-functional-spec-template.md) from approved answers, with requirement IDs, acceptance tests and [traceability](../../06-traceability-register.csv). Use the [AI prompt playbook](../../07-ai-prompt-playbook.md) for bounded implementation slices. Label any unapproved requirement explicitly; do not silently promote it into code.
 
-The work is ready for a first build slice when its actor, trigger, state, data, permissions, external dependencies, time rules, customer communication, exceptions, operational owner and tests are decided and linked to an approver. Keep confidential customer material out of repository files and prompts unless the user provides an approved handling environment.
+The work is ready for a first build slice when its actor, trigger, state, data, permissions, external dependencies, time rules, customer communication, exceptions, operational owner and tests are decided and linked to an approver. Keep customer and confidential company material out of tracked files and prompts unless the user provides an approved handling environment. Do not stage or publish project files from this toolkit by default.
